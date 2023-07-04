@@ -36,7 +36,7 @@ ORDER BY
 
 -- 3. Список компаний заказчиков (company_name из табл customers), не сделавших ни одного заказа
 SELECT
-	customers.company_name
+    customers.company_name
 FROM
     customers
     LEFT JOIN orders USING (customer_id)
